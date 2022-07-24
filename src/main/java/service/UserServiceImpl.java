@@ -9,17 +9,6 @@ public class UserServiceImpl implements UserService{
 
     UserDaoImpl userDao = new UserDaoImpl();
 
-
-    @Override
-    public void createUsersTable() {
-        userDao.createUsersTable();
-    }
-
-    @Override
-    public void dropUsersTable() {
-        userDao.dropUsersTable();
-    }
-
     @Override
     public void saveUser(String name, String lastName, byte age) {
         userDao.saveUser(name, lastName, age);

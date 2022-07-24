@@ -11,15 +11,7 @@ import java.util.List;
 public class UserDaoImpl implements UserDao{
     @PersistenceContext
     public EntityManager em;
-    @Override
-    public void createUsersTable() {
 
-    }
-
-    @Override
-    public void dropUsersTable() {
-
-    }
 
     @Override
     public void saveUser(String name, String lastName, byte age) {

@@ -14,13 +14,18 @@ public class UserDaoImpl implements UserDao{
 
 
     @Override
-    public void saveUser(String name, String lastName, byte age) {
-
+    public User addUser(String name, String lastName, byte age) {
+        em.getTransaction().begin();
+        User userFromDB = em.merge(new User(name, lastName, age));
+        em.getTransaction().commit();
+        return userFromDB;
     }
 
     @Override
-    public void removeUserById(long id) {
-
+    public void removeUserById(int id) {
+        em.getTransaction().begin();
+        em.remove(getUserById(id));
+        em.getTransaction().commit();
     }
 
     @Override
@@ -30,12 +35,14 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public void cleanUsersTable() {
-
+    public void update(User user){
+        em.getTransaction().begin();
+        em.merge(user);
+        em.getTransaction().commit();
     }
 
     @Override
     public User getUserById(int id) {
-        return null;
+        return em.find(User.class, id);
     }
 }

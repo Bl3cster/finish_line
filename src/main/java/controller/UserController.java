@@ -1,7 +1,6 @@
 package controller;
 
 import dao.UserDaoImpl;
-import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,13 +16,13 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 
-    final
-    UserDaoImpl userDao;
+    final UserDaoImpl userDao;
 
     @Autowired
     public UserController(UserDaoImpl userDao) {
         this.userDao = userDao;
     }
+
     @GetMapping(value = "/")
     public String printWelcome(ModelMap model) {
         List<String> messages = new ArrayList<>();
@@ -34,21 +33,33 @@ public class UserController {
         return "index";
     }
 
-//    @GetMapping()
-//    public String showAllUsers(Model model) {
-//        model.addAllAttributes("users", userDao.getAllUsers());
-//        return "users";
-//    }
+    @GetMapping()
+    public String showAllUsers(Model model) {
+        model.addAllAttributes("users", userDao.getAllUsers());
+        return "users";
+    }
 
-//    @GetMapping("/{id}")
-//    public String showUserbyId(@PathVariable("id") int id, Model model) {
-//        model.addAllAttributes("showUserById", userDao.getUserById(id));
-//        return "users/id";
-//    }
+    @GetMapping("/{id}")
+    public String showUserbyId(@PathVariable("id") int id, Model model) {
+        model.addAllAttributes("showUserById", userDao.getUserById(id));
+        return "showUserById";
+    }
 
-//    @GetMapping("/remove/{id}")
-//    public String showUserbyId(@PathVariable("id") int id, Model model) {
-//        model.addAllAttributes("usersRemoveById", userDao.removeUserById(id));
-//        return "users/id";
-//    }
+    @GetMapping("/remove/{id}")
+    public String showUserbyId(@PathVariable("id") int id, Model model) {
+        model.addAllAttributes("usersRemoveById", userDao.removeUserById(id));
+        return "usersRemoveById";
+    }
+
+    @GetMapping("/update")
+    public String updateUsers(Model model) {
+        model.addAllAttributes("update", userDao.update(user));
+        return "update";
+    }
+
+    @GetMapping("/add")
+    public String addUser(Model model) {
+        model.addAllAttributes("add", userDao.addUser(name, lastName, age));
+        return "add";
+    }
 }

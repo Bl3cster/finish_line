@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="finish_line:war exploded" />
+      <artifact name="finish_line:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,6 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a86b4fdc-c748-4ba7-9b7b-3e6c78d21e6f" name="Changes" comment="six to finish">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c9091d78-8b4f-45b6-9e34-64044e51ac42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c9091d78-8b4f-45b6-9e34-64044e51ac42.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
@@ -70,14 +73,15 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/79535/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate",
+    "last_opened_file_path": "C:/Users/79535/IdeaProjects/finish_line",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "ffacf54acf367e46ee400d275791f56d"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -101,7 +105,7 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="finish_line:war exploded">
+        <artifact name="finish_line:war">
           <settings>
             <option name="CONTEXT_PATH" value="" />
           </settings>
@@ -182,7 +186,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="finish_line:war exploded" />
+          <artifact name="finish_line:war" />
         </option>
       </method>
     </configuration>
@@ -196,7 +200,8 @@
       <option name="presentableId" value="Default" />
       <updated>1658569791660</updated>
       <workItem from="1658569793410" duration="455000" />
-      <workItem from="1658570268364" duration="21546000" />
+      <workItem from="1658570268364" duration="25269000" />
+      <workItem from="1658708712084" duration="1897000" />
     </task>
     <task id="LOCAL-00001" summary="six to finish">
       <created>1658682800797</created>
@@ -205,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658682800797</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="six to finish">
+      <created>1658683068645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658683068645</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,5 +238,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="six to finish" />
     <option name="LAST_COMMIT_MESSAGE" value="six to finish" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/finish_line$finish_line.ic" NAME="finish_line Coverage Results" MODIFIED="1658708731774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

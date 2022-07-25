@@ -23,7 +23,7 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public void removeUserById(int id) {
+    public void removeUserById(long id) {
         em.getTransaction().begin();
         em.remove(getUserById(id));
         em.getTransaction().commit();
@@ -43,7 +43,7 @@ public class UserDaoImpl implements UserDao{
     }
 
     @Override
-    public User getUserById(int id) {
+    public User getUserById(long id) {
         return em.find(User.class, id);
     }
 }

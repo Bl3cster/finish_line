@@ -8,10 +8,10 @@ public interface UserDao {
 
     User addUser(String name, String lastName, byte age);
 
-    void removeUserById(int id);
+    void removeUserById(long id);
 
     List<User> getAllUsers();
 
     void update(User user);
-    User getUserById(int id);
+    User getUserById(long id);
 }

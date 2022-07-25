@@ -29,36 +29,36 @@ public class UserController {
         messages.add("I'm Spring MVC application");
         messages.add("5.2.0 version by sep'19 ");
         model.addAttribute("messages", messages);
-        return "index";
+        return "users/printWelcome";
     }
 
 //    @GetMapping()
 //    public String showAllUsers(Model model) {
 //        model.addAllAttributes("users", userDao.getAllUsers());
-//        return "users";
+//        return "users/showAllUsers";
 //    }
 //
 //    @GetMapping("/{id}")
 //    public String showUserbyId(@PathVariable("id") int id, Model model) {
 //        model.addAllAttributes("showUserById", userDao.getUserById(id));
-//        return "showUserById";
+//        return "users/showUserById";
 //    }
 //
 //    @GetMapping("/remove/{id}")
 //    public String showUserbyId(@PathVariable("id") int id, Model model) {
 //        model.addAllAttributes("usersRemoveById", userDao.removeUserById(id));
-//        return "usersRemoveById";
+//        return "users/usersRemoveById";
 //    }
 //
 //    @GetMapping("/update")
 //    public String updateUsers(Model model) {
 //        model.addAllAttributes("update", userDao.update(user));
-//        return "update";
+//        return "users/updateUsers";
 //    }
 //
 //    @GetMapping("/add")
 //    public String addUser(Model model) {
 //        model.addAllAttributes("add", userDao.addUser(name, lastName, age));
-//        return "add";
+//        return "users/addUser";
 //    }
 }

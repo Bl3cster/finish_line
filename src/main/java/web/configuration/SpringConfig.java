@@ -24,7 +24,7 @@ import java.util.Properties;
 @EnableTransactionManagement(proxyTargetClass = true)
 @ComponentScan("web")
 public class SpringConfig {
-    @Resource
+
     private final Environment env;
 
     public SpringConfig(Environment env) {
@@ -61,10 +61,8 @@ public class SpringConfig {
     }
 
     @Bean
-    public PlatformTransactionManager transactionManager(final EntityManagerFactory emf) {
-        JpaTransactionManager transactionManager = new JpaTransactionManager();
-        transactionManager.setEntityManagerFactory(emf);
-        return transactionManager;
+    public JpaTransactionManager transactionManager() {
+        return new JpaTransactionManager(entityManagerFactory().getObject());
     }
 
 }

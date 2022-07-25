@@ -11,11 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a86b4fdc-c748-4ba7-9b7b-3e6c78d21e6f" name="Changes" comment="six to finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/configuration/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/configuration/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/configuration/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/dao/UserDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +76,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "ffacf54acf367e46ee400d275791f56d"
   },
   "keyToStringList": {
@@ -203,7 +201,7 @@
       <updated>1658569791660</updated>
       <workItem from="1658569793410" duration="455000" />
       <workItem from="1658570268364" duration="25269000" />
-      <workItem from="1658708712084" duration="11770000" />
+      <workItem from="1658708712084" duration="13998000" />
     </task>
     <task id="LOCAL-00001" summary="six to finish">
       <created>1658682800797</created>
@@ -233,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658721808495</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="six to finish">
+      <created>1658745031056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658745031056</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

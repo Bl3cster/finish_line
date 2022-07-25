@@ -1,13 +1,14 @@
-package dao;
+package web.dao;
 
-import model.User;
+import org.springframework.stereotype.Component;
+import web.model.User;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
+@Component
 public class UserDaoImpl implements UserDao{
     @PersistenceContext
     public EntityManager em;
